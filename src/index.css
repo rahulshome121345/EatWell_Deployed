@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  /* Force browser to use dark scrollbars etc */
+}
+
+@layer base {
+
+  html,
+  body {
+    @apply bg-dark text-white;
+    /* Enforce Dark Mode Default */
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* Premium Font Rendering */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Global Noise Texture for 'Paper' feel */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='1'/%3E%3C/svg%3E");
+    opacity: 0.03;
+    /* Very subtle grain */
+    pointer-events: none;
+    z-index: 9999;
+    mix-blend-mode: overlay;
+  }
+
+  /* Premium Selection Colors */
+  ::selection {
+    @apply bg-primary-900 text-primary-100;
+  }
+}
+
+html,
+body {
+  width: 100%;
+  /* Slate 900 - Hardcoded for immediate paint */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  /* Slate 100 */
+}
+
+@layer utilities {
+
+  /* Standard Glass (Dark Mode Only) */
+  .glass {
+    @apply bg-black/30 backdrop-blur-lg border border-white/10 shadow-xl;
+  }
+
+  /* Legacy/Unused classes (glass-dark, shadow-premium) removed for cleanliness */
+
+
+
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+}

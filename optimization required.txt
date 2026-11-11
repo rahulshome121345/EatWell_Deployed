@@ -1,0 +1,87 @@
+POINT 2 — “Why this recommendation?” Toggle
+What it is
+
+A small expandable explanation under the AI result that tells users how the AI reached that suggestion.
+
+Right now your app says:
+
+“Dehydration or Temporary Blood Sugar Imbalance”
+
+That’s good — but users subconsciously think:
+
+“Okay… but WHY?”
+
+If you don’t answer that, trust drops.
+
+What to ADD (Very Simple)
+
+Under the diagnosis title or severity badge, add a small link:
+
+Why am I seeing this?
+
+When clicked (or tapped), it expands and shows something like:
+
+AI reasoning:
+Based on symptoms such as dizziness and fatigue, along with common wellness patterns, dehydration and short-term glucose imbalance are possible contributors. This is not a diagnosis.
+
+Why this matters (Big deal)
+
+Builds AI transparency
+
+Prevents “fake AI” suspicion
+
+Makes users feel respected, not talked down to
+
+💡 Apps like Google Health, Apple Health, and Headspace ALL do this.
+
+Design tip
+
+Small font
+
+Muted color
+
+Expand/collapse animation (150ms)
+
+This should feel optional, not forced.
+
+🔹 POINT 3 — Post-Analysis CTA (What Now?)
+What’s missing right now
+
+After reading the recommendations, the user hits a dead end.
+
+They think:
+
+“Okay… I read it. Now what?”
+
+That’s bad UX.
+
+What to ADD (Only two or three actions)
+
+At the bottom of the right panel, add gentle next steps, not aggressive buttons.
+
+Best options for your app:
+
+🥗 View nutrition suggestions
+
+💧 Track hydration today
+
+🔄 Check another symptom
+
+Example placement
+
+Below the disclaimer, add a soft button row:
+
+[ View Nutrition Tips ]   [ Check Another Symptom ]
+
+
+Muted style. Not flashy.
+
+Why this matters
+
+Keeps users inside your app
+
+Turns insight → action
+
+Increases retention massively
+
+Without this, the experience feels unfinished.

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Image Path Test</title>
+</head>
+
+<body>
+    <h1>Testing Image Paths</h1>
+    <div id="output"></div>
+    <script>
+        const output = document.getElementById('output');
+        const testImage = new Image();
+        testImage.src = '/sequences/frame_000.png';
+        testImage.onload = () => {
+            output.innerHTML += '<p style="color:green">Success: frame_000.png loaded</p>';
+            output.appendChild(testImage);
+        };
+        testImage.onerror = () => {
+            output.innerHTML += '<p style="color:red">Error: frame_000.png failed to load</p>';
+        };
+    </script>
+</body>
+
+</html>
